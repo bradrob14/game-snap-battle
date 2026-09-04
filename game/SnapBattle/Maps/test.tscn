@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cl2tfyqtinlj1"]
+
+[ext_resource type="Texture2D" uid="uid://bsbc60i5pqiip" path="res://SnapBattle/Art/card-base.png" id="1_4oap4"]
+
+[node name="Test" type="Node2D" unique_id=1364715473]
+
+[node name="CardBase" type="Sprite2D" parent="." unique_id=1162730713]
+texture_filter = 1
+position = Vector2(640, 497)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_4oap4")

@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="snap-battle"
-run/main_scene="uid://bkvklux38ysq7"
+config/name="Snap Battle"
+run/main_scene="uid://cl2tfyqtinlj1"
 config/features=PackedStringArray("4.7", "C#", "Mobile")
 config/icon="res://icon.svg"
 
