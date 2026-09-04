@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://osv1vhnjm7vg"]
+
+[node name="GameUserInterface" type="Control" unique_id=1786172208]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=267829824]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1476775473]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=420929295]
+layout_mode = 2
+text = "Lives: 3"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=1810583338]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Round" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=222502548]
+layout_mode = 2
+text = "Round X X X X"
