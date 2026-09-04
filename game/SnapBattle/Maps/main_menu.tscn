@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dupkv0r5y0s1f"]
+
+[ext_resource type="Script" uid="uid://dikyirhwy3rng" path="res://Source/Maps/MainMenu.cs" id="1_asjji"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nwdj6"]
+font_size = 128
+
+[sub_resource type="LabelSettings" id="LabelSettings_g77uy"]
+font_size = 100
+
+[sub_resource type="Theme" id="Theme_nwdj6"]
+default_font_size = 64
+
+[node name="MainMenu" type="Control" unique_id=1327367682 node_paths=PackedStringArray("QuickPlay")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_asjji")
+QuickPlay = NodePath("Container/QuickPlay")
+
+[node name="Container" type="VBoxContainer" parent="." unique_id=1786148245]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Snap" type="Label" parent="Container" unique_id=328990508]
+layout_mode = 2
+text = "Snap"
+label_settings = SubResource("LabelSettings_nwdj6")
+horizontal_alignment = 1
+
+[node name="Battle!" type="Label" parent="Container" unique_id=833582388]
+layout_mode = 2
+text = "Battle!"
+label_settings = SubResource("LabelSettings_g77uy")
+horizontal_alignment = 1
+
+[node name="QuickPlay" type="Button" parent="Container" unique_id=81034567]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_nwdj6")
+text = "Quick Play"

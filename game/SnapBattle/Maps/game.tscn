@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ca0x04x6r2no6"]
+
+[ext_resource type="Script" uid="uid://ccg23raaugsh5" path="res://Source/Core/GameManager/GameManager.cs" id="1_avv5j"]
+[ext_resource type="PackedScene" uid="uid://dupkv0r5y0s1f" path="res://SnapBattle/Maps/main_menu.tscn" id="2_r2rqp"]
+[ext_resource type="PackedScene" uid="uid://lquq6us5xcyv" path="res://SnapBattle/Maps/quick_play.tscn" id="3_r2rqp"]
+
+[node name="Game" type="Node" unique_id=545535352]
+script = ExtResource("1_avv5j")
+MainMenu = ExtResource("2_r2rqp")
+QuickPlay = ExtResource("3_r2rqp")

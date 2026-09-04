@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://lquq6us5xcyv"]
+
+[ext_resource type="Script" uid="uid://cxa0nud2t0hqj" path="res://Source/Maps/QuickPlay.cs" id="1_o3dhu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tgxjs"]
+font_size = 128
+
+[node name="QuickPlay" type="Node" unique_id=1015814325]
+script = ExtResource("1_o3dhu")
+
+[node name="Label" type="Label" parent="." unique_id=702421616]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "QUICK PLAY"
+label_settings = SubResource("LabelSettings_tgxjs")
+horizontal_alignment = 1
