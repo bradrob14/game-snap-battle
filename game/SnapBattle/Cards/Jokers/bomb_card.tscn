@@ -1,12 +1,30 @@
 [gd_scene format=3 uid="uid://dx7qik3ymsdfq"]
 
 [ext_resource type="Script" uid="uid://xpfdjcjxlr8w" path="res://Source/Cards/Jokers/BombCard.cs" id="1_mo57b"]
-[ext_resource type="PackedScene" uid="uid://y2ldi5mwva2g" path="res://SnapBattle/Art/Card.tscn" id="2_nyv5o"]
-[ext_resource type="Material" uid="uid://dgj27x1ar328a" path="res://SnapBattle/MaterialLibrary/Cards/Jokers/bomb.tres" id="3_jault"]
+[ext_resource type="Texture2D" uid="uid://bsbc60i5pqiip" path="res://SnapBattle/Art/card-base.png" id="2_nyv5o"]
 
-[node name="BombCard" type="Node3D" unique_id=1704540680]
+[sub_resource type="LabelSettings" id="LabelSettings_uq7uh"]
+font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
+[node name="BombCard" type="Node2D" unique_id=824724762]
 script = ExtResource("1_mo57b")
-metadata/_custom_type_script = "uid://xpfdjcjxlr8w"
 
-[node name="Card" parent="." unique_id=78066828 instance=ExtResource("2_nyv5o")]
-material = ExtResource("3_jault")
+[node name="Background" type="Sprite2D" parent="." unique_id=1381586094]
+texture_filter = 1
+texture = ExtResource("2_nyv5o")
+
+[node name="Label" type="Label" parent="." unique_id=56243438]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -11.5
+offset_right = 24.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BOMB"
+label_settings = SubResource("LabelSettings_uq7uh")
+horizontal_alignment = 1

@@ -1,10 +1,67 @@
 [gd_scene format=3 uid="uid://ynfdjy3u1otl"]
 
+[ext_resource type="Texture2D" uid="uid://bsbc60i5pqiip" path="res://SnapBattle/Art/card-base.png" id="1_c3efm"]
 [ext_resource type="Script" uid="uid://8durdcxt8wuc" path="res://Source/Cards/Playing/StandardCard.cs" id="1_j4phv"]
-[ext_resource type="PackedScene" uid="uid://y2ldi5mwva2g" path="res://SnapBattle/Art/Card.tscn" id="2_2bk3i"]
 
-[node name="StandardCard" type="Node3D" unique_id=1598825102]
+[sub_resource type="SystemFont" id="SystemFont_t0bnt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uq7uh"]
+font = SubResource("SystemFont_t0bnt")
+font_size = 24
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_c3efm"]
+font = SubResource("SystemFont_t0bnt")
+font_size = 12
+font_color = Color(0, 0, 0, 1)
+
+[node name="StandardCard" type="Node2D" unique_id=1696675136 node_paths=PackedStringArray("BigIcon", "TopRightNumber", "BottomLeftNumber")]
 script = ExtResource("1_j4phv")
-metadata/_custom_type_script = "uid://8durdcxt8wuc"
+BigIcon = NodePath("BigIcon")
+TopRightNumber = NodePath("TopRightNumber")
+BottomLeftNumber = NodePath("BottomLeftNumber")
 
-[node name="Card" parent="." unique_id=78066828 instance=ExtResource("2_2bk3i")]
+[node name="Background" type="Sprite2D" parent="." unique_id=197981230]
+texture_filter = 1
+texture = ExtResource("1_c3efm")
+
+[node name="BigIcon" type="Label" parent="." unique_id=1795523171]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -27.5
+offset_top = -17.0
+offset_right = 27.5
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "0"
+label_settings = SubResource("LabelSettings_uq7uh")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TopRightNumber" type="Label" parent="." unique_id=1958112908]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -55.0
+offset_right = 38.0
+grow_vertical = 0
+text = "0"
+label_settings = SubResource("LabelSettings_c3efm")
+horizontal_alignment = 2
+
+[node name="BottomLeftNumber" type="Label" parent="." unique_id=321779456]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -38.0
+offset_bottom = 55.0
+grow_horizontal = 0
+offset_transform_enabled = true
+offset_transform_rotation = 3.1415927
+text = "0"
+label_settings = SubResource("LabelSettings_c3efm")
+horizontal_alignment = 2

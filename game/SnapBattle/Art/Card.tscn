@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://y2ldi5mwva2g"]
-
-[node name="Card" type="CSGBox3D" unique_id=78066828]
-use_collision = true
-size = Vector3(0.064, 0.001, 0.089)
